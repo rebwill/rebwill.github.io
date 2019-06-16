@@ -8,27 +8,27 @@ import "../style/index.scss";
 
 window.onload = () => {
   document.querySelector(".card").classList.add(generateRandomSuit());
-  document.querySelector(".card").innerHTML = generateRandomNumber();
+  document.querySelector(".card").innerHTML = generateRandomGreeting();
 };
 
-let generateRandomNumber = () => {
-  let numbers = [
-    "A",
-    "2",
-    "3",
-    "4",
-    "5",
-    "6",
-    "7",
-    "8",
-    "9",
-    "10",
-    "J",
-    "Q",
-    "K"
+let generateRandomGreeting = () => {
+  let greetings = [
+    "Happy birthday, Dad!",
+    "Feliz cumpleaños, Papá!",
+    "Feliz aniversário Papai!",
+    "Joyeux anniversaire Papa!",
+    "Buon compleanno papà!",
+    "爸爸生日快乐",
+    "Bon anivèsè, papa!",
+    "Grattis på födelsedagen pappa!",
+    "สุขสันต์วันเกิดคุณพ่อ!",
+    "Furaha ya kuzaliwa, Baba!",
+    "Selamat ulang tahun ayah!",
+    "Maligayang kaarawan, itay!",
+    "Co-là-breith math, Dad!"
   ];
-  let indexNumbers = Math.floor(Math.random() * numbers.length);
-  return numbers[indexNumbers];
+  let indexGreetings = Math.floor(Math.random() * greetings.length);
+  return greetings[indexGreetings];
 };
 
 let generateRandomSuit = () => {
