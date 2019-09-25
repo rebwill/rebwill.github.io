@@ -5,10 +5,14 @@ import ScrollToTop from "./component/scrollToTop";
 import { Home } from "./views/home";
 import { Demo } from "./views/demo";
 import { Single } from "./views/single";
+import { About } from "./views/about";
+import { Contact } from "./views/contact";
 import injectContext from "./store/appContext";
 
 import { Navbar } from "./component/navbar";
 import { Footer } from "./component/footer";
+import { NewFooter } from "./component/newfooter";
+import { NavbarWhite } from "./component/navbarWhite";
 
 //create your first component
 export class Layout extends React.Component {
@@ -21,14 +25,20 @@ export class Layout extends React.Component {
 			<div className="d-flex flex-column h-100">
 				<BrowserRouter basename={basename}>
 					<ScrollToTop>
-						<Navbar />
+						<Switch>
+							<Route exact path="/" component={Navbar} />
+							<Route exact path="/about" component={NavbarWhite} />
+							<Route exact path="/contact" component={NavbarWhite} />
+						</Switch>
 						<Switch>
 							<Route exact path="/" component={Home} />
 							<Route path="/demo" component={Demo} />
 							<Route path="/single/:theid" component={Single} />
+							<Route path="/about" component={About} />
+							<Route path="/contact" component={Contact} />
 							<Route render={() => <h1>Not found!</h1>} />
 						</Switch>
-						<Footer />
+						<NewFooter />
 					</ScrollToTop>
 				</BrowserRouter>
 			</div>
