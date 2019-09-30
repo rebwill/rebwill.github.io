@@ -3,6 +3,8 @@
 */
 body {
     font-family: 'Roboto', sans-serif;
+    // display: flex;
+    // flex-direction: column;
 }
 h1 {
     font-size: 3rem;
@@ -10,15 +12,13 @@ h1 {
 }
 
 /* -------------- Navbar ------------- */
+
 .navbar-transparent{
     background-color: transparent;
 }
 .navbar-white{
     background-color: white;
 }
-// .navbar-solid{
-//     background-color: #68a299;
-// }
 .navbar-brand {
     color: black;
 }
