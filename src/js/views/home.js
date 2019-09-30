@@ -76,9 +76,9 @@ export class Home extends React.Component {
 								<div className="card-body">
 									<h5 className="card-title">To-Do App</h5>
 									<p className="card-text">
-										Add, delete, or complete tasks on your to-do list. Planned future releases will
-										include fixes for procrastination; for now you&apos;re on your own. Built with
-										HTML, CSS, Javascript, and React.
+										Add, delete, or complete tasks on your to-do list. Unfortunately does not
+										include any fixes for procrastination. Built with HTML, CSS, Javascript, and
+										React.
 									</p>
 									<a href="#" className="btn btn see-work-btn">
 										See more
