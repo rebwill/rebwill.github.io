@@ -69,23 +69,23 @@ export class Navbar extends React.Component {
 					<ul className="navbar-nav ml-auto mt-2 mt-lg-0">
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<a className="nav-link" href="/#">
+								<Link className="nav-link" to="/#">
 									Home
-								</a>
+								</Link>
 							</button>
 						</li>
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<a className="nav-link" href="/about">
+								<Link className="nav-link" to="/about">
 									About
-								</a>
+								</Link>
 							</button>
 						</li>
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<a className="nav-link" href="/contact">
+								<Link className="nav-link" to="/contact">
 									Contact
-								</a>
+								</Link>
 							</button>
 						</li>
 					</ul>
@@ -93,29 +93,4 @@ export class Navbar extends React.Component {
 			</nav>
 		);
 	}
-}
-
-{
-	/* <Link className="navbar-title" to="/">
-					<h1 className="navbar-h1">
-						Rebecca
-						<br />
-						Willett
-					</h1>
-		</Link>
-    <div className="ml-auto">
-					<Link to="/">
-						<button className="btn btn-primary">Home</button>
-					</Link>
-				</div>
-				<div className="ml-auto">
-					<Link to="/about">
-						<button className="btn btn-primary">About</button>
-					</Link>
-				</div>
-				<div className="ml-auto">
-					<Link to="/contact">
-						<button className="btn btn-primary">Contact</button>
-					</Link>
-				</div> */
 }

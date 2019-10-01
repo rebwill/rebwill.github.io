@@ -49,9 +49,9 @@ export class Home extends React.Component {
 										restoration all over the world. Built with HTML, CSS, Javascript, React, React
 										Router, React Context API, and Google Maps API.
 									</p>
-									<a href="#" className="btn see-work-btn">
+									<Link href="#" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
 										See more
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -64,9 +64,9 @@ export class Home extends React.Component {
 										A simple re-creation of Meetup.com, displaying meetup groups and associated
 										events using HTML, CSS, Javascript, React, React Router and React Context API.
 									</p>
-									<a href="#" className="btn btn see-work-btn">
+									<Link to="" className="btn btn see-work-btn" target="_blank" rel="noopener noreferrer">
 										See more
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
@@ -80,9 +80,9 @@ export class Home extends React.Component {
 										include any fixes for procrastination. Built with HTML, CSS, Javascript, and
 										React.
 									</p>
-									<a href="#" className="btn btn see-work-btn">
+									<Link href="https://rebwill.github.io/toDoApp-portfolio/" className="btn btn see-work-btn" target="_blank" rel="noopener noreferrer">
 										See more
-									</a>
+									</Link>
 								</div>
 							</div>
 						</div>
