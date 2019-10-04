@@ -30,24 +30,22 @@ export class NavbarWhite extends React.Component {
 				<div className="collapse navbar-collapse" id="navbarTogglerDemo02">
 					<ul className="navbar-nav ml-auto mt-2 mt-lg-0">
 						<li className="nav-item">
-							<button className="btn btn-light semi-trans-white-btn">
-								<Link className="nav-link" to="/#">
-									Home
-								</Link>
+							<button className="btn btn-light semi-trans-white-btn" href="/#">
+								<a className="nav-link">Home</a>
 							</button>
 						</li>
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<Link className="nav-link" to="/about">
+								<a className="nav-link" href="#about">
 									About
-								</Link>
+								</a>
 							</button>
 						</li>
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<Link className="nav-link" to="/contact">
+								<a className="nav-link" href="#contact">
 									Contact
-								</Link>
+								</a>
 							</button>
 						</li>
 					</ul>

@@ -6,13 +6,23 @@ import coralPreview from "../../img/coralguardians.png";
 import toDoPreview from "../../img/todolist.png";
 import meetupPreview from "../../img/fakemeetup.png";
 import { navbar } from "../component/navbar";
+import rebeccaHeadshot from "../../img/rebeccaheadshot.jpg";
+import rebeccaScuba from "../../img/rebeccascuba.jpg";
 
 export class Home extends React.Component {
 	componentDidMount() {
 		window.addEventListener("hashchange", this.scrollBuffer);
 	}
 	scrollBuffer = e => {
-		window.scrollTo(window.scrollX, window.scrollY - 140);
+		if (location.hash === "#projects") {
+			window.scrollTo(0, 675);
+		}
+		if (location.hash === "#about") {
+			window.scrollTo(0, 1550);
+		}
+		if (location.hash === "#contact") {
+			window.scrollTo(0, document.body.scrollHeight);
+		}
 	};
 
 	render() {
@@ -27,7 +37,7 @@ export class Home extends React.Component {
 							</h1>
 							<h5>I&apos;m a Miami-based full stack web developer.</h5>
 							<button className="btn see-work-btn">
-								<a className="nav-link" href="#my-work">
+								<a className="nav-link" href="#projects">
 									See my work
 								</a>
 							</button>
@@ -35,7 +45,7 @@ export class Home extends React.Component {
 					</div>
 				</div>
 				<div className="project-section">
-					<div className="project-section-title" id="my-work">
+					<div className="project-section-title" id="projects">
 						<h1>Recent Work</h1>
 					</div>
 					<div className="row">
@@ -49,7 +59,7 @@ export class Home extends React.Component {
 										restoration all over the world. Built with HTML, CSS, Javascript, React, React
 										Router, React Context API, and Google Maps API.
 									</p>
-									<Link href="#" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
+									<Link to="" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
 										See more
 									</Link>
 								</div>
@@ -64,7 +74,11 @@ export class Home extends React.Component {
 										A simple re-creation of Meetup.com, displaying meetup groups and associated
 										events using HTML, CSS, Javascript, React, React Router and React Context API.
 									</p>
-									<Link to="" className="btn btn see-work-btn" target="_blank" rel="noopener noreferrer">
+									<Link
+										to=""
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
 										See more
 									</Link>
 								</div>
@@ -80,11 +94,123 @@ export class Home extends React.Component {
 										include any fixes for procrastination. Built with HTML, CSS, Javascript, and
 										React.
 									</p>
-									<Link href="https://rebwill.github.io/toDoApp-portfolio/" className="btn btn see-work-btn" target="_blank" rel="noopener noreferrer">
+									<a
+										href="https://rebwill.github.io/toDoApp-portfolio/"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
 										See more
-									</Link>
+									</a>
 								</div>
 							</div>
+						</div>
+					</div>
+				</div>
+				<div className="container-fluid about-container" id="about">
+					<div className="row about-row-1">
+						<div className="col-md-4 d-flex">
+							<img className="img-fluid rounded-circle rebeccaheadshot" src={rebeccaHeadshot} />
+						</div>
+						<div className="col-md-8 about-text right-column">
+							<h1>About Me</h1>
+							<p>
+								My professional career has covered a lot of ground throughout the worlds of tech,
+								startups, and social entrepreneurship in the US and Latin America. After leading
+								BUILDING.co, Miami&apos;s premier coworking space for tech companies, for two years as
+								the General Manager, I decided I was ready for yet another new challenge — so I began my
+								coding journey with 4Geeks Academy&apos;s full stack web development bootcamp.
+								<br />
+								<br />
+								I&apos;m now seeking a web developer role in the Miami area. I&apos;m proficient in
+								HTML, CSS, Bootstrap, Javascript, React, and PHP, and am excited to deepen my expertise
+								in these technologies and continue adding new tools to my belt.
+								<br />
+								<br />I hold a BA in International Affairs and Anthropology from Northeastern University
+								in Boston and an MBA from the Universidad de Palermo in Buenos Aires, Argentina.
+								<br />
+								<br />
+								I&apos;m also passionate about: environment and sustainability; teaching lean startup
+								methodologies; and diversity and inclusion in tech and in our city. Apart from that,
+								I&apos;m an avid scuba diver and love exploring (and helping protect) South
+								Florida&apos;s marine ecosystems. I also volunteer as a diver with the Coral Restoration
+								Foundation in Key Largo.
+							</p>
+						</div>
+					</div>
+
+					<div className="row about-row-2">
+						<div className="col-md-4 d-flex" />
+						<div className="col-md-8 d-flex text-center badge-container right-column">
+							<span>
+								<h1>Skills</h1>
+							</span>
+						</div>
+					</div>
+					<div className="row about-row-3">
+						<div className="col-md-4 d-flex" />
+						<div className="col-md-8 d-flex text-center badge-container right-column">
+							<span className="badge badge-pill badge-dark">HTML</span>
+							<span className="badge badge-pill badge-dark">CSS</span>
+							<span className="badge badge-pill badge-dark">Bootstrap</span>
+							<span className="badge badge-pill badge-dark">Javascript</span>
+							<span className="badge badge-pill badge-dark">React</span>
+							<span className="badge badge-pill badge-dark">PHP</span>
+						</div>
+					</div>
+					<div className="row about-row-4">
+						<div className="col-md-4 d-flex" />
+						<div className="col-md-8 d-flex text-center right-column">
+							<h1>Education</h1>
+						</div>
+					</div>
+					<div className="row about-row-5">
+						<div className="col-md-4 d-flex" />
+						<div className="col-md-8 right-column">
+							<p>
+								<strong>Full Stack Web Development Bootcamp</strong>
+								<br />
+								4Geeks Academy
+								<br />
+								Miami, FL
+								<br />
+							</p>
+							<br />
+							<p>
+								<strong>MBA</strong>
+								<br />
+								Universidad de Palermo
+								<br />
+								Buenos Aires, Argentina
+								<br />
+							</p>
+							<br />
+							<p>
+								<strong>BA in International Affairs and Anthropology</strong>
+								<br />
+								Northeastern University
+								<br />
+								Boston, MA
+								<br />
+							</p>
+							<br />
+						</div>
+					</div>
+				</div>
+				<div className="container-fluid contact-container" id="contact">
+					<div className="row about-row-1">
+						<div className="col-md-4 d-flex">
+							<img className="img-fluid rounded-circle rebeccaheadshot" src={rebeccaScuba} />
+						</div>
+						<div className="col-md-8 about-text right-column">
+							<h1>Don&apos;t be shy. What can I help you with?</h1>
+							<p className="contact-p">
+								<br />
+								You can reach me via email at <strong>willett.rebecca at gmail.com</strong>.<br />
+								<br />
+								Alternatively, you can also connect with me on{" "}
+								<a href="https://www.linkedin.com/in/willettrebecca/">LinkedIn </a>
+								or <a href="https://twitter.com/rebeccaAwillett">Twitter</a>.
+							</p>
 						</div>
 					</div>
 				</div>

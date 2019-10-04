@@ -82,6 +82,9 @@ h1 {
 .about-container {
     margin-top: 175px;
     margin-bottom: 50px;
+    background-color: #cfe6e3;
+    padding-top: 75px;
+    padding-bottom: 40px;
 }
 .about-row-1, .about-row-2, .about-row-3, .about-row-4, .about-row-5 {
     margin-right: 30px;
@@ -109,4 +112,11 @@ h1 {
 .badge {
     font-size: 16px;
     margin: 5px;
+}
+
+/* -------------- Contact ------------- */
+
+.contact-container {
+    padding-top: 50px;
+    padding-bottom: 70px;
 }

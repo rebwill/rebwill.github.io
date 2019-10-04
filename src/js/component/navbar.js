@@ -18,13 +18,13 @@ export class Navbar extends React.Component {
 	measureScroll = e => {
 		var pageOffset = window.scrollY;
 		if (pageOffset <= 600) {
-			console.log("you're at the top, setting isTop to true");
+			// console.log("you're at the top, setting isTop to true");
 			this.setState({
 				isTop: true
 			});
 		}
 		if (pageOffset > 600) {
-			console.log("you're going down; setting isTop to false");
+			// console.log("you're going down; setting isTop to false");
 			this.setState({
 				isTop: false
 			});
@@ -69,23 +69,23 @@ export class Navbar extends React.Component {
 					<ul className="navbar-nav ml-auto mt-2 mt-lg-0">
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<Link className="nav-link" to="/#">
+								<a className="nav-link" href="/#">
 									Home
-								</Link>
+								</a>
 							</button>
 						</li>
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<Link className="nav-link" to="/about">
+								<a className="nav-link" href="#about">
 									About
-								</Link>
+								</a>
 							</button>
 						</li>
 						<li className="nav-item">
 							<button className="btn btn-light semi-trans-white-btn">
-								<Link className="nav-link" to="/contact">
+								<a className="nav-link" href="#contact">
 									Contact
-								</Link>
+								</a>
 							</button>
 						</li>
 					</ul>

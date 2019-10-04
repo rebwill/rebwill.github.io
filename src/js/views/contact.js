@@ -6,7 +6,7 @@ import rebeccaHeadshot from "../../img/rebeccaheadshot.jpg";
 export class Contact extends React.Component {
 	render() {
 		return (
-			<div className="container-fluid about-container">
+			<div className="container-fluid contact-container">
 				<div className="row about-row-1">
 					<div className="col-md-4 d-flex">
 						<img className="img-fluid rounded-circle rebeccaheadshot" src={rebeccaHeadshot} />
