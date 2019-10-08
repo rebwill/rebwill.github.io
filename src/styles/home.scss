@@ -1,6 +1,11 @@
 body {
     font-family: 'Roboto', sans-serif;
+    width: 100%;
 }
+.image-container {
+    width: 100%;
+}
+
 .home-hero-image {
     background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/2450294/pexels-photo-2450294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
     height: 95vh;
@@ -72,4 +77,9 @@ body {
 }
 .seafoam-btn {
     background-color: rgba(104,162,153,0.5);
+}
+.coming-soon {
+    font-family: 'Permanent Marker', cursive;
+    color: #99463d;
+    font-size: 1.5rem;
 }

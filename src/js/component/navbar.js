@@ -30,7 +30,6 @@ export class Navbar extends React.Component {
 			});
 		}
 		var navTog = this.state.isTop;
-		console.log("this.state.isTop: " + navTog);
 		if (this.state.isTop == true) {
 			this.setState({
 				navCSS: "navbar-transparent"
@@ -46,7 +45,6 @@ export class Navbar extends React.Component {
 	render() {
 		return (
 			<nav className={"navbar navbar-expand-lg navbar-light fixed-top" + " " + this.state.navCSS}>
-				{console.log("this.state.navCSS called in JSX: " + this.state.navCSS)}
 				<a className="navbar-brand" href="#">
 					<h1 className="navbar-h1">
 						Rebecca

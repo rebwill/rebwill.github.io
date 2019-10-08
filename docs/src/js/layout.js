@@ -22,7 +22,7 @@ export class Layout extends React.Component {
 		const basename = process.env.BASENAME || "";
 
 		return (
-			<div className="d-flex flex-column h-100">
+			<div className="d-flex flex-column h-100 top-div-layout">
 				<BrowserRouter basename={basename}>
 					<ScrollToTop>
 						<Switch>

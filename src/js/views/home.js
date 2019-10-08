@@ -27,7 +27,7 @@ export class Home extends React.Component {
 
 	render() {
 		return (
-			<div>
+			<div className="return-div">
 				{navbar}
 				<div className="image-container">
 					<div className="home-hero-image">
@@ -51,41 +51,6 @@ export class Home extends React.Component {
 					<div className="row">
 						<div className="col-lg-4 d-flex">
 							<div className="card">
-								<img src={coralPreview} className="card-img-top" alt="..." />
-								<div className="card-body">
-									<h5 className="card-title">Coral Guardians</h5>
-									<p className="card-text">
-										Allows ocean lovers to discover and donate to organizations working in coral
-										restoration all over the world. Built with HTML, CSS, Javascript, React, React
-										Router, React Context API, and Google Maps API.
-									</p>
-									<Link to="" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
-										See more
-									</Link>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 d-flex">
-							<div className="card">
-								<img src={meetupPreview} className="card-img-top" alt="..." />
-								<div className="card-body">
-									<h5 className="card-title">Meetup Clone</h5>
-									<p className="card-text">
-										A simple re-creation of Meetup.com, displaying meetup groups and associated
-										events using HTML, CSS, Javascript, React, React Router and React Context API.
-									</p>
-									<Link
-										to=""
-										className="btn btn see-work-btn"
-										target="_blank"
-										rel="noopener noreferrer">
-										See more
-									</Link>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 d-flex">
-							<div className="card">
 								<img src={toDoPreview} className="card-img-top" alt="..." />
 								<div className="card-body">
 									<h5 className="card-title">To-Do App</h5>
@@ -101,6 +66,43 @@ export class Home extends React.Component {
 										rel="noopener noreferrer">
 										See more
 									</a>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 d-flex">
+							<div className="card">
+								<img src={coralPreview} className="card-img-top" alt="..." />
+								<div className="card-body">
+									<h5 className="card-title">Coral Guardians</h5>
+									<p className="card-text">
+										Allows ocean lovers to discover and donate to organizations working in coral
+										restoration all over the world. Built with HTML, CSS, Javascript, React, React
+										Router, React Context API, and Google Maps API.
+									</p>
+									{/* <Link to="#" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
+										See more
+									</Link> */}
+									<h5 className="coming-soon">Coming soon!</h5>
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 d-flex">
+							<div className="card">
+								<img src={meetupPreview} className="card-img-top" alt="..." />
+								<div className="card-body">
+									<h5 className="card-title">Meetup Clone</h5>
+									<p className="card-text">
+										A simple re-creation of Meetup.com, displaying meetup groups and associated
+										events using HTML, CSS, Javascript, React, React Router and React Context API.
+									</p>
+									{/* <Link
+										to="#"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										See more
+									</Link> */}
+									<h5 className="coming-soon">Coming soon!</h5>
 								</div>
 							</div>
 						</div>
