@@ -80,19 +80,19 @@ h1 {
 /* -------------- About ------------- */
 
 .about-container {
-    margin-top: 175px;
+    margin-top: 75px;
     margin-bottom: 50px;
     background-color: #cfe6e3;
     padding-top: 75px;
     padding-bottom: 40px;
 }
-.about-row-1, .about-row-2, .about-row-3, .about-row-4, .about-row-5 {
+.about-row-1, .about-row-2, .about-row-3, .about-row-4, .about-row-5, .about-row-6, .about-row-7 {
     margin-right: 30px;
     margin-left: 30px;
-    margin-bottom: 20px;
+    // margin-bottom: 20px;
 }
 .about-row-1 {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
 }
 .about-row-2 {
     margin-bottom: 7px;
@@ -100,6 +100,19 @@ h1 {
 .about-row-3{
     margin-bottom: 40px;
 }
+.about-row-4{
+    margin-bottom: 7px;
+}
+.about-row-5{
+    margin-bottom: 40px;
+}
+.about-row-6{
+    margin-bottom: 7px;
+}
+// .badge-col{
+//     padding-left: 0;
+//     padding-right: 0;
+// }
 .rebeccaheadshot {
     margin-left: 16px;
     margin-right: 16px;
@@ -112,6 +125,9 @@ h1 {
 .badge {
     font-size: 16px;
     margin: 5px;
+}
+.skill-badge {
+    display: inline-block;
 }
 
 /* -------------- Contact ------------- */

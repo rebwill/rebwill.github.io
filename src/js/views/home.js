@@ -71,6 +71,26 @@ export class Home extends React.Component {
 						</div>
 						<div className="col-lg-4 d-flex">
 							<div className="card">
+								<img src={meetupPreview} className="card-img-top" alt="..." />
+								<div className="card-body">
+									<h5 className="card-title">Meetup Clone</h5>
+									<p className="card-text">
+										A simple re-creation of Meetup.com, displaying meetup groups and associated
+										events using HTML, CSS, Javascript, React, React Router and React Context API.
+									</p>
+									<Link
+										to="https://meetupclone.netlify.com"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										See more
+									</Link>
+									{/* <h5 className="coming-soon">Coming soon!</h5> */}
+								</div>
+							</div>
+						</div>
+						<div className="col-lg-4 d-flex">
+							<div className="card">
 								<img src={coralPreview} className="card-img-top" alt="..." />
 								<div className="card-body">
 									<h5 className="card-title">Coral Guardians</h5>
@@ -80,26 +100,6 @@ export class Home extends React.Component {
 										Router, React Context API, and Google Maps API.
 									</p>
 									{/* <Link to="#" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
-										See more
-									</Link> */}
-									<h5 className="coming-soon">Coming soon!</h5>
-								</div>
-							</div>
-						</div>
-						<div className="col-lg-4 d-flex">
-							<div className="card">
-								<img src={meetupPreview} className="card-img-top" alt="..." />
-								<div className="card-body">
-									<h5 className="card-title">Meetup Clone</h5>
-									<p className="card-text">
-										A simple re-creation of Meetup.com, displaying meetup groups and associated
-										events using HTML, CSS, Javascript, React, React Router and React Context API.
-									</p>
-									{/* <Link
-										to="#"
-										className="btn btn see-work-btn"
-										target="_blank"
-										rel="noopener noreferrer">
 										See more
 									</Link> */}
 									<h5 className="coming-soon">Coming soon!</h5>
@@ -150,22 +150,46 @@ export class Home extends React.Component {
 					</div>
 					<div className="row about-row-3">
 						<div className="col-md-4 d-flex" />
-						<div className="col-md-8 d-flex text-center badge-container right-column">
-							<span className="badge badge-pill badge-dark">HTML</span>
-							<span className="badge badge-pill badge-dark">CSS</span>
-							<span className="badge badge-pill badge-dark">Bootstrap</span>
-							<span className="badge badge-pill badge-dark">Javascript</span>
-							<span className="badge badge-pill badge-dark">React</span>
-							<span className="badge badge-pill badge-dark">PHP</span>
+						<div className="col-md-8 d-flex badge-container right-column">
+							<div className="row">
+								<div className="col-sm-3 d-flex badge-col">
+									<span className="badge badge-pill badge-dark skill-badge">HTML</span>
+									<span className="badge badge-pill badge-dark skill-badge">CSS</span>
+								</div>
+								<div className="col-sm-3 d-flex badge-col">
+									<span className="badge badge-pill badge-dark skill-badge">React</span>
+									<span className="badge badge-pill badge-dark skill-badge">PHP</span>
+								</div>
+								<div className="col-sm-2 d-flex badge-col">
+									<span className="badge badge-pill badge-dark skill-badge">Bootstrap</span>
+								</div>
+								<div className="col-sm-2 d-flex badge-col">
+									<span className="badge badge-pill badge-dark skill-badge">Javascript</span>
+								</div>
+							</div>
 						</div>
 					</div>
 					<div className="row about-row-4">
+						<div className="col-md-4 d-flex" />
+						<div className="col-md-8 d-flex right-column">
+							<h5 className="coming-soon">Currently studying:</h5>
+						</div>
+					</div>
+					<div className="row about-row-5">
+						<div className="col-md-4 d-flex" />
+						<div className="col-md-8 d-flex right-column">
+							<span className="badge badge-pill badge-light">Node.js</span>
+							<span className="badge badge-pill badge-light">Express</span>
+							<span className="badge badge-pill badge-light">MongoDB</span>
+						</div>
+					</div>
+					<div className="row about-row-6">
 						<div className="col-md-4 d-flex" />
 						<div className="col-md-8 d-flex text-center right-column">
 							<h1>Education</h1>
 						</div>
 					</div>
-					<div className="row about-row-5">
+					<div className="row about-row-7">
 						<div className="col-md-4 d-flex" />
 						<div className="col-md-8 right-column">
 							<p>
@@ -210,8 +234,21 @@ export class Home extends React.Component {
 								You can reach me via email at <strong>willett.rebecca at gmail.com</strong>.<br />
 								<br />
 								Alternatively, you can also connect with me on{" "}
-								<a href="https://www.linkedin.com/in/willettrebecca/">LinkedIn </a>
-								or <a href="https://twitter.com/rebeccaAwillett">Twitter</a>.
+								<a
+									href="https://www.linkedin.com/in/willettrebecca/"
+									target="_blank"
+									rel="noopener noreferrer">
+									LinkedIn
+								</a>
+								,{" "}
+								<a href="https://twitter.com/rebeccaAwillett" target="_blank" rel="noopener noreferrer">
+									Twitter
+								</a>
+								, or{" "}
+								<a href="https://github.com/rebwill" target="_blank" rel="noopener noreferrer">
+									GitHub
+								</a>
+								.
 							</p>
 						</div>
 					</div>
