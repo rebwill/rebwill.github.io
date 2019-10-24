@@ -131,11 +131,28 @@ export class Home extends React.Component {
 								in Boston and an MBA from the Universidad de Palermo in Buenos Aires, Argentina.
 								<br />
 								<br />
-								I&apos;m also passionate about: environment and sustainability; teaching lean startup
-								methodologies; and diversity and inclusion in tech and in our city. Apart from that,
-								I&apos;m an avid scuba diver and love exploring (and helping protect) South
-								Florida&apos;s marine ecosystems. I also volunteer as a diver with the Coral Restoration
-								Foundation in Key Largo.
+								I&apos;m an active member of the Miami startup and tech community. I&apos;m an organizer
+								of our local{" "}
+								<a href="https://www.1millioncups.com/miami" target="_blank" rel="noopener noreferrer">
+									1 Million Cups
+								</a>{" "}
+								chapter; I volunteer with{" "}
+								<a href="https://www.code-art.com" target="_blank" rel="noopener noreferrer">
+									Code/Art
+								</a>{" "}
+								to encourage young girls to get involved with coding; and I&apos;m a member of the
+								Global Shapers{" "}
+								<a
+									href="https://www.instagram.com/globalshapersmiami/"
+									target="_blank"
+									rel="noopener noreferrer">
+									Miami hub
+								</a>{" "}
+								(fun fact, I&apos;m also building our Wordpress site). I&apos;m passionate about
+								promoting diversity and inclusion in our community, as well as environmental causes.
+								I&apos;m also an avid scuba diver and love exploring South Florida&apos;s marine
+								ecosystems. I even volunteer as a diver with the Coral Restoration Foundation in Key
+								Largo!
 							</p>
 						</div>
 					</div>
