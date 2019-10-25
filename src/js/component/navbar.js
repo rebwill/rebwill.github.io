@@ -18,13 +18,11 @@ export class Navbar extends React.Component {
 	measureScroll = e => {
 		var pageOffset = window.scrollY;
 		if (pageOffset <= 600) {
-			// console.log("you're at the top, setting isTop to true");
 			this.setState({
 				isTop: true
 			});
 		}
 		if (pageOffset > 600) {
-			// console.log("you're going down; setting isTop to false");
 			this.setState({
 				isTop: false
 			});
@@ -44,7 +42,7 @@ export class Navbar extends React.Component {
 
 	render() {
 		return (
-			<nav className={"navbar navbar-expand-lg navbar-light fixed-top" + " " + this.state.navCSS}>
+			<nav className={"navbar navbar-expand-lg navbar-light fixed-top" + " " + this.state.navCSS} id="navbar-sm">
 				<a className="navbar-brand" href="#">
 					<h1 className="navbar-h1">
 						Rebecca
@@ -57,7 +55,7 @@ export class Navbar extends React.Component {
 					type="button"
 					data-toggle="collapse"
 					data-target="#navbarTogglerDemo02"
-					aria-controls="navbarTogglerDemo02"
+					aria-controls="navbarText"
 					aria-expanded="false"
 					aria-label="Toggle navigation">
 					<span className="navbar-toggler-icon ml-auto" />
@@ -65,21 +63,21 @@ export class Navbar extends React.Component {
 
 				<div className="collapse navbar-collapse" id="navbarTogglerDemo02">
 					<ul className="navbar-nav ml-auto mt-2 mt-lg-0">
-						<li className="nav-item">
+						<li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 							<button className="btn btn-light semi-trans-white-btn">
 								<a className="nav-link" href="/#">
 									Home
 								</a>
 							</button>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 							<button className="btn btn-light semi-trans-white-btn">
 								<a className="nav-link" href="#about">
 									About
 								</a>
 							</button>
 						</li>
-						<li className="nav-item">
+						<li className="nav-item" data-toggle="collapse" data-target=".navbar-collapse.show">
 							<button className="btn btn-light semi-trans-white-btn">
 								<a className="nav-link" href="#contact">
 									Contact

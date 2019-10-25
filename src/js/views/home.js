@@ -78,13 +78,13 @@ export class Home extends React.Component {
 										A simple re-creation of Meetup.com, displaying meetup groups and associated
 										events using HTML, CSS, Javascript, React, React Router and React Context API.
 									</p>
-									<Link
-										to="https://meetupclone.netlify.com"
+									<a
+										href="https://meetupclone.netlify.com"
 										className="btn btn see-work-btn"
 										target="_blank"
 										rel="noopener noreferrer">
 										See more
-									</Link>
+									</a>
 									{/* <h5 className="coming-soon">Coming soon!</h5> */}
 								</div>
 							</div>
@@ -113,7 +113,7 @@ export class Home extends React.Component {
 						<div className="col-md-4 d-flex">
 							<img className="img-fluid rounded-circle rebeccaheadshot" src={rebeccaHeadshot} />
 						</div>
-						<div className="col-md-8 about-text right-column">
+						<div className="col-md-8 about-text right-column right-column-mobile">
 							<h1>About Me</h1>
 							<p>
 								My professional career has covered a lot of ground throughout the worlds of tech,
@@ -273,30 +273,4 @@ export class Home extends React.Component {
 			</div>
 		);
 	}
-}
-
-{
-	/*<div className="lorem-ipsum">
-					<h2>Escape is not his plan. I must face him, alone. </h2>
-					<p>
-						I have traced the Rebel spies to her. Now she is my only link to finding their secret base.
-						Partially, but it also obeys your commands. The Force is strong with this one. I have you now.
-						Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or
-						wherever youre going. Im surprised you had the courage to take the responsibility yourself.
-						Partially, but it also obeys your commands. She must have hidden the plans in the escape pod.
-						Send a detachment down to retrieve them, and see to it personally, Commander. got a lot of
-						spirit. I know, what do you think? Escape is not his plan. I must face him, alone. In my
-						experience, there is no such thing as luck. A tremor in the Force. The last time I felt it was
-						in the presence of my old master. Red Five standing by.
-						<br /> I have traced the Rebel spies to her. Now she is my only link to finding their secret
-						base. Partially, but it also obeys your commands. The Force is strong with this one. I have you
-						now. Look, I can take you as far as Anchorhead. You can get a transport there to Mos Eisley or
-						wherever youre going. Im surprised you had the courage to take the responsibility yourself.
-						Partially, but it also obeys your commands. She must have hidden the plans in the escape pod.
-						Send a detachment down to retrieve them, and see to it personally, Commander. got a lot of
-						spirit. I know, what do you think? Escape is not his plan. I must face him, alone. In my
-						experience, there is no such thing as luck. A tremor in the Force. The last time I felt it was
-						in the presence of my old master. Red Five standing by.
-					</p>
-				</div> */
 }
