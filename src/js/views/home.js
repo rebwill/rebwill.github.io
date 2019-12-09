@@ -2,10 +2,18 @@ import React from "react";
 import "../../styles/home.scss";
 import { compile } from "path-to-regexp";
 import { Link } from "react-router-dom";
+
+// Components
+import { navbar } from "../component/navbar";
+
+// Screenshot images
 import coralPreview from "../../img/coralguardians.png";
 import toDoPreview from "../../img/todolist.png";
 import meetupPreview from "../../img/fakemeetup.png";
-import { navbar } from "../component/navbar";
+import veganbrunchPreview from "../../img/veganbrunchPreview.png";
+import meetupPreviewNEW from "../../img/meetupPreviewNEW.png";
+
+// Other images
 import rebeccaHeadshot from "../../img/rebeccaheadshot.jpg";
 import rebeccaScuba from "../../img/rebeccascuba.jpg";
 
@@ -51,17 +59,16 @@ export class Home extends React.Component {
 					<div className="row">
 						<div className="col-lg-4 d-flex">
 							<div className="card">
-								<img src={toDoPreview} className="card-img-top" alt="..." />
+								<img src={veganbrunchPreview} className="card-img-top" alt="..." />
 								<div className="card-body">
-									<h5 className="card-title">To-Do App</h5>
+									<h5 className="card-title">Vegan Brunch Society</h5>
 									<p className="card-text">
-										Add, delete, or complete tasks on your to-do list. Unfortunately does not
-										include any fixes for procrastination. Built with HTML, CSS, Javascript, and
-										React.
+										A collection of recipes for our monthly gathering of friends to cook a decadent
+										vegan brunch together. Built with Node.js, HTML, and CSS. Deployed on Heroku.
 									</p>
 									<a
-										href="https://rebwill.github.io/toDoApp-portfolio/"
-										className="btn btn see-work-btn"
+										href="https://vegan-brunch.herokuapp.com/"
+										className="btn btn see-work-btn stretched-link"
 										target="_blank"
 										rel="noopener noreferrer">
 										See more
@@ -69,18 +76,41 @@ export class Home extends React.Component {
 								</div>
 							</div>
 						</div>
+
 						<div className="col-lg-4 d-flex">
 							<div className="card">
-								<img src={meetupPreview} className="card-img-top" alt="..." />
+								<img src={toDoPreview} className="card-img-top" alt="..." />
+								<div className="card-body">
+									<h5 className="card-title">To-Do App</h5>
+									<p className="card-text">
+										Add, delete, or complete tasks on your to-do list. Unfortunately does not
+										include any fixes for procrastination. Built with HTML, CSS, Javascript, and
+										React. Deployed via GitHub Pages.
+									</p>
+									<a
+										href="https://rebwill.github.io/toDoApp-portfolio/"
+										className="btn btn see-work-btn stretched-link"
+										target="_blank"
+										rel="noopener noreferrer">
+										See more
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div className="col-lg-4 d-flex">
+							<div className="card">
+								<img src={meetupPreviewNEW} className="card-img-top" alt="..." />
 								<div className="card-body">
 									<h5 className="card-title">Meetup Clone</h5>
 									<p className="card-text">
 										A simple re-creation of Meetup.com, displaying meetup groups and associated
 										events using HTML, CSS, Javascript, React, React Router and React Context API.
+										Deployed on Netlify.
 									</p>
 									<a
 										href="https://meetupclone.netlify.com"
-										className="btn btn see-work-btn"
+										className="btn btn see-work-btn stretched-link"
 										target="_blank"
 										rel="noopener noreferrer">
 										See more
@@ -102,7 +132,7 @@ export class Home extends React.Component {
 									{/* <Link to="#" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
 										See more
 									</Link> */}
-									<h5 className="coming-soon">Coming soon!</h5>
+									<h5 className="coming-soon stretched-link">Coming soon!</h5>
 								</div>
 							</div>
 						</div>
@@ -124,8 +154,8 @@ export class Home extends React.Component {
 								<br />
 								<br />
 								I&apos;m now seeking a web developer role in the Miami area. I&apos;m proficient in
-								HTML, CSS, Bootstrap, Javascript, React, and PHP, and am excited to deepen my expertise
-								in these technologies and continue adding new tools to my belt.
+								HTML, CSS, Javascript, and React, with exposure to PHP and Node.js, and am excited to
+								deepen my expertise in these technologies and continue adding new tools to my belt.
 								<br />
 								<br />I hold a BA in International Affairs and Anthropology from Northeastern University
 								in Boston and an MBA from the Universidad de Palermo in Buenos Aires, Argentina.
@@ -136,23 +166,19 @@ export class Home extends React.Component {
 								<a href="https://www.1millioncups.com/miami" target="_blank" rel="noopener noreferrer">
 									1 Million Cups
 								</a>{" "}
-								chapter; I volunteer with{" "}
-								<a href="https://www.code-art.com" target="_blank" rel="noopener noreferrer">
-									Code/Art
-								</a>{" "}
-								to encourage young girls to get involved with coding; and I&apos;m a member of the
-								Global Shapers{" "}
+								chapter; I teach occasional workshops at{" "}
+								<a href="https://theideacenter.co">the Idea Center</a> of Miami Dade College on rapid
+								prototyping for business model validation; and I&apos;m a member of the Global Shapers{" "}
 								<a
 									href="https://www.instagram.com/globalshapersmiami/"
 									target="_blank"
 									rel="noopener noreferrer">
-									Miami hub
+									Miami hub.
 								</a>{" "}
-								(fun fact, I&apos;m also building our Wordpress site). I&apos;m passionate about
-								promoting diversity and inclusion in our community, as well as environmental causes.
-								I&apos;m also an avid scuba diver and love exploring South Florida&apos;s marine
-								ecosystems. I even volunteer as a diver with the Coral Restoration Foundation in Key
-								Largo!
+								I&apos;m passionate about promoting diversity and inclusion in our community, as well as
+								environmental causes. I&apos;m also an avid scuba diver and love exploring South
+								Florida&apos;s marine ecosystems, including volunteering as a diver with the Coral
+								Restoration Foundation in Key Largo!
 							</p>
 						</div>
 					</div>

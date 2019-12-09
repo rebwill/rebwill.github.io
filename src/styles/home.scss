@@ -27,7 +27,7 @@ body {
 .see-work-btn {
     color:black;
     background-color: white;
-    margin: 15px;
+    margin-top: 15px;
     box-shadow: 0 5px 10px rgba(0,0,0,.2);
 }
 .see-work-btn:hover {
@@ -74,6 +74,9 @@ body {
 .card:hover .seafoam-btn {
     background-color: white;
     color: #686868;
+}
+.card-title {
+    font-weight: 600;
 }
 .seafoam-btn {
     background-color: rgba(104,162,153,0.5);
