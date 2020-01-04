@@ -85,7 +85,7 @@ export class Home extends React.Component {
 										on Heroku.
 									</p>
 									<a
-										href="https://vegan-brunch.herokuapp.com/"
+										href="https://whatstheweatherin.herokuapp.com/"
 										className="btn btn see-work-btn stretched-link"
 										target="_blank"
 										rel="noopener noreferrer">

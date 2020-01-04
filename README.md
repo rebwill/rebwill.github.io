@@ -1,5 +1,9 @@
 ## rebwill.github.io
 
+## GIT PUSH INSTRUCTIONS
+
+git push origin dev
+
 ## DEPLOY INSTRUCTIONS
 
 1. npm run build
