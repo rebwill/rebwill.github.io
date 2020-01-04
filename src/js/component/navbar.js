@@ -17,12 +17,62 @@ export class Navbar extends React.Component {
 
 	measureScroll = e => {
 		var pageOffset = window.scrollY;
-		if (pageOffset <= 600) {
+		// LG+ For screens 992px and up
+		// if (window.matchMedia("(min-width: 992px)").matches) {
+		// 	if (pageOffset <= 620) {
+		// 		this.setState({
+		// 			isTop: true
+		// 		});
+		// 	}
+		// 	if (pageOffset > 620) {
+		// 		this.setState({
+		// 			isTop: false
+		// 		});
+		// 	}
+		// 	var navTog = this.state.isTop;
+		// 	if (this.state.isTop == true) {
+		// 		this.setState({
+		// 			navCSS: "navbar-transparent"
+		// 		});
+		// 	}
+		// 	if (this.state.isTop == false) {
+		// 		this.setState({
+		// 			navCSS: "navbar-white"
+		// 		});
+		// 	}
+		// }
+		// // MD - for screens btwn 768-991px
+		// else if (window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches) {
+		// 	if (pageOffset <= 1000) {
+		// 		this.setState({
+		// 			isTop: true
+		// 		});
+		// 	}
+		// 	if (pageOffset > 1000) {
+		// 		this.setState({
+		// 			isTop: false
+		// 		});
+		// 	}
+		// 	var navTog = this.state.isTop;
+		// 	if (this.state.isTop == true) {
+		// 		this.setState({
+		// 			navCSS: "navbar-transparent"
+		// 		});
+		// 	}
+		// 	if (this.state.isTop == false) {
+		// 		this.setState({
+		// 			navCSS: "navbar-white"
+		// 		});
+		// 	}
+		// }
+
+		// original
+		if (pageOffset <= 620) {
 			this.setState({
 				isTop: true
 			});
 		}
-		if (pageOffset > 600) {
+		if (pageOffset > 620) {
 			this.setState({
 				isTop: false
 			});

@@ -1,88 +1,88 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    width: 100%;
+  font-family: "Roboto", sans-serif;
+  width: 100%;
 }
 .image-container {
-    width: 100%;
+  width: 100%;
 }
 
 .home-hero-image {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), url("https://images.pexels.com/photos/2450294/pexels-photo-2450294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
-    height: 95vh;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 95vh, 0 85vh);
-
+  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+    url("https://images.pexels.com/photos/2450294/pexels-photo-2450294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  height: 95vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  clip-path: polygon(0 0, 100% 0, 100% 85vh, 50% 95vh, 0 85vh);
 }
 .home-hero-text {
-    text-align: center;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  margin-top: 20px;
 }
 .see-work-btn {
-    color:black;
-    background-color: white;
-    margin-top: 15px;
-    box-shadow: 0 5px 10px rgba(0,0,0,.2);
+  color: black;
+  background-color: white;
+  margin-top: 15px;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
 }
 .see-work-btn:hover {
-    background-color: black;
-    color: white;
-    box-shadow: 0 3px 7px rgba(0,0,0,.3);
+  background-color: black;
+  color: white;
+  box-shadow: 0 3px 7px rgba(0, 0, 0, 0.3);
 }
 .see-work-btn:hover .nav-link {
-    color:white;
+  color: white;
 }
 .lorem-ipsum {
-    padding: 45px;
+  padding: 45px;
 }
 .white-btn {
-    color: black;
-    background-color: white;
+  color: black;
+  background-color: white;
 }
 .project-section {
-    margin-top: 50px;
-    padding: 16px;
+  margin-top: 50px;
+  padding: 16px;
 }
 
 .card-img-top {
-    width: 100%;
+  width: 100%;
 }
 .card {
-    margin: 35px;
-    padding: 25px;
-    background-image: linear-gradient(to right bottom,#CFCDCD, #EBD8D8, #CFCDCD);
-    border: none;
-    box-shadow: 5px 10px 15px rgba(0,0,0,.2);
+  margin: 35px;
+  padding: 25px;
+  background-image: linear-gradient(to right bottom, #cfcdcd, #ebd8d8, #cfcdcd);
+  border: none;
+  box-shadow: 5px 10px 15px rgba(0, 0, 0, 0.2);
 }
 .card-body {
-    padding-top: 1.25rem;
+  padding-top: 1.25rem;
 }
 .card:hover {
-    background-image: linear-gradient(
-        to right bottom,#CFCDCD, #C0CFCD, #CFCDCD);
-    background-color:rgba(104,162,153,0.5);
-    box-shadow: 5px 7px 10px rgba(0,0,0,.3);
-    transform: translateY(4px);
-    transition: all .3s;
+  background-image: linear-gradient(to right bottom, #cfcdcd, #c0cfcd, #cfcdcd);
+  background-color: rgba(104, 162, 153, 0.5);
+  box-shadow: 5px 7px 10px rgba(0, 0, 0, 0.3);
+  transform: translateY(4px);
+  transition: all 0.3s;
 }
 .card:hover .seafoam-btn {
-    background-color: white;
-    color: #686868;
+  background-color: white;
+  color: #686868;
 }
 .card-title {
-    font-weight: 600;
+  font-weight: 600;
 }
 .seafoam-btn {
-    background-color: rgba(104,162,153,0.5);
+  background-color: rgba(104, 162, 153, 0.5);
 }
 .coming-soon {
-    font-family: 'Permanent Marker', cursive;
-    color: #99463d;
-    font-size: 1.5rem;
+  font-family: "Permanent Marker", cursive;
+  color: #99463d;
+  font-size: 1.5rem;
 }

@@ -12,6 +12,7 @@ import toDoPreview from "../../img/todolist.png";
 import meetupPreview from "../../img/fakemeetup.png";
 import veganbrunchPreview from "../../img/veganbrunchPreview.png";
 import meetupPreviewNEW from "../../img/meetupPreviewNEW.png";
+import whatstheweatherPreview from "../../img/whatstheweatherPreview.png";
 
 // Other images
 import rebeccaHeadshot from "../../img/rebeccaheadshot.jpg";
@@ -26,7 +27,22 @@ export class Home extends React.Component {
 			window.scrollTo(0, 675);
 		}
 		if (location.hash === "#about") {
-			window.scrollTo(0, 1550);
+			// LG+ For screens 992px and up
+			if (window.matchMedia("(min-width: 992px)").matches) {
+				window.scrollTo(0, 2000);
+			}
+			// MD - for screens btwn 768-991px
+			else if (window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches) {
+				window.scrollTo(0, 4250);
+			}
+			// SM - for screens btwn 576-767px
+			else if (window.matchMedia("(min-width: 576px) and (max-width: 767px)").matches) {
+				window.scrollTo(0, 3820);
+			}
+			// XS - for screens 575 or less
+			else if (window.matchMedia("(max-width: 575px)").matches) {
+				window.scrollTo(0, 3870);
+			}
 		}
 		if (location.hash === "#contact") {
 			window.scrollTo(0, document.body.scrollHeight);
@@ -56,15 +72,17 @@ export class Home extends React.Component {
 					<div className="project-section-title" id="projects">
 						<h1>Recent Work</h1>
 					</div>
+
 					<div className="row">
 						<div className="col-lg-4 d-flex">
 							<div className="card">
-								<img src={veganbrunchPreview} className="card-img-top" alt="..." />
+								<img src={whatstheweatherPreview} className="card-img-top" alt="..." />
 								<div className="card-body">
-									<h5 className="card-title">Vegan Brunch Society</h5>
+									<h5 className="card-title">What&apos;s the Weather</h5>
 									<p className="card-text">
-										A collection of recipes for our monthly gathering of friends to cook a decadent
-										vegan brunch together. Built with Node.js, HTML, and CSS. Deployed on Heroku.
+										A simple React app that displays the current weather in the requested location.
+										Built with React, WeatherAPI.com&apos;s RESTful API, and React Router. Deployed
+										on Heroku.
 									</p>
 									<a
 										href="https://vegan-brunch.herokuapp.com/"
@@ -79,16 +97,15 @@ export class Home extends React.Component {
 
 						<div className="col-lg-4 d-flex">
 							<div className="card">
-								<img src={toDoPreview} className="card-img-top" alt="..." />
+								<img src={veganbrunchPreview} className="card-img-top" alt="..." />
 								<div className="card-body">
-									<h5 className="card-title">To-Do App</h5>
+									<h5 className="card-title">Vegan Brunch Society</h5>
 									<p className="card-text">
-										Add, delete, or complete tasks on your to-do list. Unfortunately does not
-										include any fixes for procrastination. Built with HTML, CSS, Javascript, and
-										React. Deployed via GitHub Pages.
+										A collection of recipes for our monthly gathering of friends to cook a decadent
+										vegan brunch together. Built with Node.js, HTML, and CSS. Deployed on Heroku.
 									</p>
 									<a
-										href="https://rebwill.github.io/toDoApp-portfolio/"
+										href="https://vegan-brunch.herokuapp.com/"
 										className="btn btn see-work-btn stretched-link"
 										target="_blank"
 										rel="noopener noreferrer">
@@ -119,6 +136,28 @@ export class Home extends React.Component {
 								</div>
 							</div>
 						</div>
+
+						<div className="col-lg-4 d-flex">
+							<div className="card">
+								<img src={toDoPreview} className="card-img-top" alt="..." />
+								<div className="card-body">
+									<h5 className="card-title">To-Do App</h5>
+									<p className="card-text">
+										Add, delete, or complete tasks on your to-do list. Unfortunately does not
+										include any fixes for procrastination. Built with HTML, CSS, Javascript, and
+										React. Deployed via GitHub Pages.
+									</p>
+									<a
+										href="https://rebwill.github.io/toDoApp-portfolio/"
+										className="btn btn see-work-btn stretched-link"
+										target="_blank"
+										rel="noopener noreferrer">
+										See more
+									</a>
+								</div>
+							</div>
+						</div>
+
 						<div className="col-lg-4 d-flex">
 							<div className="card">
 								<img src={coralPreview} className="card-img-top" alt="..." />
@@ -150,12 +189,13 @@ export class Home extends React.Component {
 								startups, and social entrepreneurship in the US and Latin America. After leading
 								BUILDING.co, Miami&apos;s premier coworking space for tech companies, for two years as
 								the General Manager, I decided I was ready for yet another new challenge — so I began my
-								coding journey with 4Geeks Academy&apos;s full stack web development bootcamp.
+								coding journey in 2019 with 4Geeks Academy&apos;s full stack web development bootcamp.
 								<br />
 								<br />
 								I&apos;m now seeking a web developer role in the Miami area. I&apos;m proficient in
-								HTML, CSS, Javascript, and React, with exposure to PHP and Node.js, and am excited to
-								deepen my expertise in these technologies and continue adding new tools to my belt.
+								HTML, CSS, Javascript, and React, and have basic knowledge of Node.js and RESTful APIs.
+								I am excited to deepen my expertise in these technologies and continue adding new tools
+								to my belt.
 								<br />
 								<br />I hold a BA in International Affairs and Anthropology from Northeastern University
 								in Boston and an MBA from the Universidad de Palermo in Buenos Aires, Argentina.
@@ -187,14 +227,34 @@ export class Home extends React.Component {
 						<div className="col-md-4 d-flex" />
 						<div className="col-md-8 d-flex text-center badge-container right-column">
 							<span>
-								<h1>Skills</h1>
+								<h1>Knowledge Areas</h1>
 							</span>
 						</div>
 					</div>
 					<div className="row about-row-3">
 						<div className="col-md-4 d-flex" />
-						<div className="col-md-8 d-flex badge-container right-column">
-							<div className="row">
+						<div className="col-md-8  badge-container right-column">
+							<p>
+								<strong>Proficient:</strong>
+							</p>
+							<ul>
+								<li>HTML</li>
+								<li>CSS</li>
+								<li>Bootstrap</li>
+								<li>Javascript</li>
+								<li>React</li>
+								<li>Node.js</li>
+								<li>REST APIs</li>
+							</ul>
+
+							<p>
+								<strong>Currently Studying:</strong>
+							</p>
+							<ul>
+								<li>Express</li>
+								<li>MongoDB</li>
+							</ul>
+							{/* <div className="row">
 								<div className="col-sm-3 d-flex badge-col">
 									<span className="badge badge-pill badge-dark skill-badge">HTML</span>
 									<span className="badge badge-pill badge-dark skill-badge">CSS</span>
@@ -203,29 +263,31 @@ export class Home extends React.Component {
 									<span className="badge badge-pill badge-dark skill-badge">React</span>
 									<span className="badge badge-pill badge-dark skill-badge">PHP</span>
 								</div>
+							</div>
+							<div className="row">
 								<div className="col-sm-2 d-flex badge-col">
 									<span className="badge badge-pill badge-dark skill-badge">Bootstrap</span>
 								</div>
 								<div className="col-sm-2 d-flex badge-col">
 									<span className="badge badge-pill badge-dark skill-badge">Javascript</span>
 								</div>
-							</div>
+							</div> */}
 						</div>
 					</div>
-					<div className="row about-row-4">
+					{/* <div className="row about-row-4">
 						<div className="col-md-4 d-flex" />
 						<div className="col-md-8 d-flex right-column">
 							<h5 className="coming-soon">Currently studying:</h5>
 						</div>
-					</div>
-					<div className="row about-row-5">
+					</div> */}
+					{/* <div className="row about-row-5">
 						<div className="col-md-4 d-flex" />
 						<div className="col-md-8 d-flex right-column">
 							<span className="badge badge-pill badge-light">Node.js</span>
 							<span className="badge badge-pill badge-light">Express</span>
 							<span className="badge badge-pill badge-light">MongoDB</span>
 						</div>
-					</div>
+					</div> */}
 					<div className="row about-row-6">
 						<div className="col-md-4 d-flex" />
 						<div className="col-md-8 d-flex text-center right-column">
