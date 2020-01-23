@@ -8,87 +8,99 @@ export class Navbar extends React.Component {
 
 	state = {
 		isTop: true,
-		navCSS: "navbar-transparent"
+		navCSS: "navbar-white"
 	};
 
-	componentDidMount() {
-		window.addEventListener("scroll", this.measureScroll);
-	}
+	// componentDidMount() {
+	// 	window.addEventListener("scroll", this.measureScroll);
+	// }
 
-	measureScroll = e => {
-		var pageOffset = window.scrollY;
-		// LG+ For screens 992px and up
-		// if (window.matchMedia("(min-width: 992px)").matches) {
-		// 	if (pageOffset <= 620) {
-		// 		this.setState({
-		// 			isTop: true
-		// 		});
-		// 	}
-		// 	if (pageOffset > 620) {
-		// 		this.setState({
-		// 			isTop: false
-		// 		});
-		// 	}
-		// 	var navTog = this.state.isTop;
-		// 	if (this.state.isTop == true) {
-		// 		this.setState({
-		// 			navCSS: "navbar-transparent"
-		// 		});
-		// 	}
-		// 	if (this.state.isTop == false) {
-		// 		this.setState({
-		// 			navCSS: "navbar-white"
-		// 		});
-		// 	}
-		// }
-		// // MD - for screens btwn 768-991px
-		// else if (window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches) {
-		// 	if (pageOffset <= 1000) {
-		// 		this.setState({
-		// 			isTop: true
-		// 		});
-		// 	}
-		// 	if (pageOffset > 1000) {
-		// 		this.setState({
-		// 			isTop: false
-		// 		});
-		// 	}
-		// 	var navTog = this.state.isTop;
-		// 	if (this.state.isTop == true) {
-		// 		this.setState({
-		// 			navCSS: "navbar-transparent"
-		// 		});
-		// 	}
-		// 	if (this.state.isTop == false) {
-		// 		this.setState({
-		// 			navCSS: "navbar-white"
-		// 		});
-		// 	}
-		// }
+	// measureScroll = e => {
+	// 	var pageOffset = window.scrollY;
 
-		// original
-		if (pageOffset <= 620) {
-			this.setState({
-				isTop: true
-			});
-		}
-		if (pageOffset > 620) {
-			this.setState({
-				isTop: false
-			});
-		}
-		var navTog = this.state.isTop;
-		if (this.state.isTop == true) {
-			this.setState({
-				navCSS: "navbar-transparent"
-			});
-		}
-		if (this.state.isTop == false) {
-			this.setState({
-				navCSS: "navbar-white"
-			});
-		}
-	};
+	// Desktop
+	// if (window.matchMedia("(min-width: 769px)").matches) {
+	// 	if (pageOffset <= 620) {
+	// 		this.setState({
+	// 			isTop: true
+	// 		});
+	// 	}
+	// 	if (pageOffset > 620) {
+	// 		this.setState({
+	// 			isTop: false
+	// 		});
+	// 	}
+	// 	// var navTog = this.state.isTop;
+
+	// 	// set CSS
+	// 	if (this.state.isTop == true) {
+	// 		this.setState({
+	// 			navCSS: "navbar-transparent"
+	// 		});
+	// 	}
+	// 	if (this.state.isTop == false) {
+	// 		this.setState({
+	// 			navCSS: "navbar-white"
+	// 		});
+	// 	}
+	// }
+
+	// Mobile
+	// if (window.matchMedia("(max-width: 768px)").matches) {
+	// 	this.setState({
+	// 		isTop: false,
+	// 		navCSS: "navbar-white"
+	// 	});
+	// }
+
+	// LG+ For screens 992px and up
+	// if (window.matchMedia("(min-width: 992px)").matches) {
+	// 	if (pageOffset <= 620) {
+	// 		this.setState({
+	// 			isTop: true
+	// 		});
+	// 	}
+	// 	if (pageOffset > 620) {
+	// 		this.setState({
+	// 			isTop: false
+	// 		});
+	// 	}
+	// 	var navTog = this.state.isTop;
+	// 	if (this.state.isTop == true) {
+	// 		this.setState({
+	// 			navCSS: "navbar-transparent"
+	// 		});
+	// 	}
+	// 	if (this.state.isTop == false) {
+	// 		this.setState({
+	// 			navCSS: "navbar-white"
+	// 		});
+	// 	}
+	// }
+	// // MD - for screens btwn 768-991px
+	// else if (window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches) {
+	// 	if (pageOffset <= 1000) {
+	// 		this.setState({
+	// 			isTop: true
+	// 		});
+	// 	}
+	// 	if (pageOffset > 1000) {
+	// 		this.setState({
+	// 			isTop: false
+	// 		});
+	// 	}
+	// 	var navTog = this.state.isTop;
+	// 	if (this.state.isTop == true) {
+	// 		this.setState({
+	// 			navCSS: "navbar-transparent"
+	// 		});
+	// 	}
+	// 	if (this.state.isTop == false) {
+	// 		this.setState({
+	// 			navCSS: "navbar-white"
+	// 		});
+	// 	}
+	// }
 
 	render() {
 		return (
@@ -108,7 +120,7 @@ export class Navbar extends React.Component {
 					aria-controls="navbarText"
 					aria-expanded="false"
 					aria-label="Toggle navigation">
-					<span className="navbar-toggler-icon ml-auto" />
+					<span className="navbar-toggler-icon mr-auto" />
 				</button>
 
 				<div className="collapse navbar-collapse" id="navbarTogglerDemo02">

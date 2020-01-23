@@ -22,30 +22,28 @@ export class Home extends React.Component {
 	componentDidMount() {
 		window.addEventListener("hashchange", this.scrollBuffer);
 	}
+
+	findOffsetPosition = elmnt => {
+		var headerOffset = 125;
+		var element = document.getElementById(elmnt);
+		var elementPosition = element.getBoundingClientRect().top;
+		var offsetPosition = elementPosition - headerOffset;
+		window.scrollTo({
+			top: offsetPosition,
+			behavior: "smooth"
+		});
+	};
+
 	scrollBuffer = e => {
 		if (location.hash === "#projects") {
-			window.scrollTo(0, 675);
+			this.findOffsetPosition("projects");
 		}
+
 		if (location.hash === "#about") {
-			// LG+ For screens 992px and up
-			if (window.matchMedia("(min-width: 992px)").matches) {
-				window.scrollTo(0, 2000);
-			}
-			// MD - for screens btwn 768-991px
-			else if (window.matchMedia("(min-width: 768px) and (max-width: 991px)").matches) {
-				window.scrollTo(0, 4250);
-			}
-			// SM - for screens btwn 576-767px
-			else if (window.matchMedia("(min-width: 576px) and (max-width: 767px)").matches) {
-				window.scrollTo(0, 3820);
-			}
-			// XS - for screens 575 or less
-			else if (window.matchMedia("(max-width: 575px)").matches) {
-				window.scrollTo(0, 3870);
-			}
+			this.findOffsetPosition("about");
 		}
 		if (location.hash === "#contact") {
-			window.scrollTo(0, document.body.scrollHeight);
+			this.findOffsetPosition("contact");
 		}
 	};
 
@@ -68,7 +66,7 @@ export class Home extends React.Component {
 						</div>
 					</div>
 				</div>
-				<div className="project-section">
+				<div className="project-section" id="project-section">
 					<div className="project-section-title" id="projects">
 						<h1>Recent Work</h1>
 					</div>
@@ -254,40 +252,8 @@ export class Home extends React.Component {
 								<li>Express</li>
 								<li>MongoDB</li>
 							</ul>
-							{/* <div className="row">
-								<div className="col-sm-3 d-flex badge-col">
-									<span className="badge badge-pill badge-dark skill-badge">HTML</span>
-									<span className="badge badge-pill badge-dark skill-badge">CSS</span>
-								</div>
-								<div className="col-sm-3 d-flex badge-col">
-									<span className="badge badge-pill badge-dark skill-badge">React</span>
-									<span className="badge badge-pill badge-dark skill-badge">PHP</span>
-								</div>
-							</div>
-							<div className="row">
-								<div className="col-sm-2 d-flex badge-col">
-									<span className="badge badge-pill badge-dark skill-badge">Bootstrap</span>
-								</div>
-								<div className="col-sm-2 d-flex badge-col">
-									<span className="badge badge-pill badge-dark skill-badge">Javascript</span>
-								</div>
-							</div> */}
 						</div>
 					</div>
-					{/* <div className="row about-row-4">
-						<div className="col-md-4 d-flex" />
-						<div className="col-md-8 d-flex right-column">
-							<h5 className="coming-soon">Currently studying:</h5>
-						</div>
-					</div> */}
-					{/* <div className="row about-row-5">
-						<div className="col-md-4 d-flex" />
-						<div className="col-md-8 d-flex right-column">
-							<span className="badge badge-pill badge-light">Node.js</span>
-							<span className="badge badge-pill badge-light">Express</span>
-							<span className="badge badge-pill badge-light">MongoDB</span>
-						</div>
-					</div> */}
 					<div className="row about-row-6">
 						<div className="col-md-4 d-flex" />
 						<div className="col-md-8 d-flex text-center right-column">

@@ -28,7 +28,9 @@ export class Layout extends React.Component {
 						<Switch>
 							<Route exact path="/" component={Navbar} />
 							<Route exact path="/about" component={NavbarWhite} />
+							{/* ^ Not currently in use because I have everything on the Home page */}
 							<Route exact path="/contact" component={NavbarWhite} />
+							{/* ^ Not currently in use because I have everything on the Home page */}
 						</Switch>
 						<Switch>
 							<Route exact path="/" component={Home} />
