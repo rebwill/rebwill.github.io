@@ -11,6 +11,7 @@ import veganbrunchPreview from "../../img/veganbrunchPreview.png";
 import meetupPreviewNEW from "../../img/meetupPreviewNEW.png";
 import whatstheweatherPreview from "../../img/whatstheweatherPreview.png";
 import getInspiredPreview from "../../img/getInspiredPreview.png";
+import whatthefishPreview from "../../img/whatthefishPreview.png";
 
 // Other images
 import rebeccaHeadshot from "../../img/rebeccaheadshot.jpg";
@@ -76,6 +77,28 @@ export class Home extends React.Component {
 					</div>
 
 					<div className="row">
+						<div className="col-lg-4 d-flex">
+							<div className="card">
+								<img src={whatthefishPreview} className="card-img-top" alt="..." />
+								<div className="card-body">
+									<h5 className="card-title">What the Fish?!</h5>
+									<p className="card-text">
+										Learn more about your seafood by selecting a type of fish and reading about its
+										population, source, and challenges its species faces. Built with a
+										Node.js/Express backend and a React front end, and deployed on Heroku. Data from
+										fishwatch.gov.
+									</p>
+									<a
+										href="https://whatthefish.herokuapp.com/"
+										className="btn btn see-work-btn stretched-link"
+										target="_blank"
+										rel="noopener noreferrer">
+										See more
+									</a>
+								</div>
+							</div>
+						</div>
+
 						<div className="col-lg-4 d-flex">
 							<div className="card">
 								<img src={getInspiredPreview} className="card-img-top" alt="..." />
@@ -183,7 +206,7 @@ export class Home extends React.Component {
 							</div>
 						</div>
 
-						<div className="col-lg-4 d-flex">
+						{/* <div className="col-lg-4 d-flex">
 							<div className="card">
 								<img src={coralPreview} className="card-img-top" alt="..." />
 								<div className="card-body">
@@ -196,10 +219,10 @@ export class Home extends React.Component {
 									{/* <Link to="#" className="btn see-work-btn" target="_blank" rel="noopener noreferrer">
 										See more
 									</Link> */}
-									<h5 className="coming-soon stretched-link">Coming soon!</h5>
+						{/* <h5 className="coming-soon stretched-link">Coming soon!</h5>
 								</div>
 							</div>
-						</div>
+						</div> */}
 					</div>
 				</div>
 
