@@ -12,6 +12,7 @@ import meetupPreviewNEW from "../../img/meetupPreviewNEW.png";
 import whatstheweatherPreview from "../../img/whatstheweatherPreview.png";
 import getInspiredPreview from "../../img/getInspiredPreview.png";
 import whatthefishPreview from "../../img/whatthefishPreview.png";
+import miarecyclingPreview from "../../img/miarecyclingPreview.png";
 
 // Other images
 import rebeccaHeadshot from "../../img/rebeccaheadshot.jpg";
@@ -79,6 +80,35 @@ export class Home extends React.Component {
 					<div className="row">
 						<div className="col-lg-4 d-flex">
 							<div className="card">
+								<img src={miarecyclingPreview} className="card-img-top" alt="..." />
+								<div className="card-body">
+									<h5 className="card-title">MIA Recycling</h5>
+									<p className="card-text">
+										Learn what materials can and cannot be recycled in Miami Dade County (but most
+										importantly, try to reduce the amount of waste you create in the first place!).
+										Built with MongoDB, Node, and Express on the back end, and React on the front
+										end, including React Router and Hooks, Material UI, and React Bootstrap.
+									</p>
+									<a
+										href="https://miarecycling.herokuapp.com/"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View project
+									</a>
+									<a
+										href="https://github.com/rebwill/recycling-app"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View on Github
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<div className="col-lg-4 d-flex">
+							<div className="card">
 								<img src={whatthefishPreview} className="card-img-top" alt="..." />
 								<div className="card-body">
 									<h5 className="card-title">What the Fish?!</h5>
@@ -90,10 +120,17 @@ export class Home extends React.Component {
 									</p>
 									<a
 										href="https://whatthefish.herokuapp.com/"
-										className="btn btn see-work-btn stretched-link"
+										className="btn btn see-work-btn"
 										target="_blank"
 										rel="noopener noreferrer">
-										See more
+										View project
+									</a>
+									<a
+										href="https://github.com/rebwill/what-the-fish"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View on Github
 									</a>
 								</div>
 							</div>
@@ -112,10 +149,17 @@ export class Home extends React.Component {
 									</p>
 									<a
 										href="http://inspirational-quote-generator.herokuapp.com/"
-										className="btn btn see-work-btn stretched-link"
+										className="btn btn see-work-btn"
 										target="_blank"
 										rel="noopener noreferrer">
-										See more
+										View project
+									</a>
+									<a
+										href="https://github.com/rebwill/vue-random-quote-generator"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View on Github
 									</a>
 								</div>
 							</div>
@@ -133,10 +177,17 @@ export class Home extends React.Component {
 									</p>
 									<a
 										href="https://whatstheweatherin.herokuapp.com/"
-										className="btn btn see-work-btn stretched-link"
+										className="btn btn see-work-btn"
 										target="_blank"
 										rel="noopener noreferrer">
-										See more
+										View project
+									</a>
+									<a
+										href="https://github.com/rebwill/check-the-weather"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View on Github
 									</a>
 								</div>
 							</div>
@@ -154,10 +205,17 @@ export class Home extends React.Component {
 									</p>
 									<a
 										href="https://vegan-brunch.herokuapp.com/"
-										className="btn btn see-work-btn stretched-link"
+										className="btn btn see-work-btn"
 										target="_blank"
 										rel="noopener noreferrer">
-										See more
+										View project
+									</a>
+									<a
+										href="https://github.com/rebwill/vegan-brunch"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View on Github
 									</a>
 								</div>
 							</div>
@@ -175,10 +233,17 @@ export class Home extends React.Component {
 									</p>
 									<a
 										href="https://meetupclone.netlify.com"
-										className="btn btn see-work-btn stretched-link"
+										className="btn btn see-work-btn"
 										target="_blank"
 										rel="noopener noreferrer">
-										See more
+										View project
+									</a>
+									<a
+										href="https://github.com/rebwill/MeetupClone"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View on Github
 									</a>
 									{/* <h5 className="coming-soon">Coming soon!</h5> */}
 								</div>
@@ -197,10 +262,17 @@ export class Home extends React.Component {
 									</p>
 									<a
 										href="https://rebwill.github.io/toDoApp-portfolio/"
-										className="btn btn see-work-btn stretched-link"
+										className="btn btn see-work-btn"
 										target="_blank"
 										rel="noopener noreferrer">
-										See more
+										View project
+									</a>
+									<a
+										href="https://github.com/rebwill/ReactToDoApp"
+										className="btn btn see-work-btn"
+										target="_blank"
+										rel="noopener noreferrer">
+										View on Github
 									</a>
 								</div>
 							</div>
@@ -300,15 +372,8 @@ export class Home extends React.Component {
 								<li>Node.js</li>
 								<li>Express</li>
 								<li>REST APIs</li>
-							</ul>
-
-							{/* <p>
-								<strong>Currently Studying:</strong>
-							</p>
-							<ul>
-								<li>Express</li>
 								<li>MongoDB</li>
-							</ul> */}
+							</ul>
 						</div>
 					</div>
 
