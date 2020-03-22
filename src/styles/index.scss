@@ -109,7 +109,28 @@ h1 {
   color: black;
 }
 
-/* -------------- About ------------- */
+/* -------------- About - separate view ------------- */
+
+body {
+  margin-top: 150px;
+}
+
+.about-box {
+  // background-color: #68a299;
+  background-color: #cfe6e3;
+  // background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  //   url("https://images.pexels.com/photos/2450294/pexels-photo-2450294.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940");
+  margin-left: 100px;
+  margin-right: 400px;
+  padding: 30px;
+  @media only screen and (max-width: 768px) {
+    margin-left: 20px;
+    margin-right: 20px;
+    padding: 20px;
+  }
+}
+
+/* -------------- About - on home page ------------- */
 
 @media only screen and (max-width: 768px) {
   .right-column {

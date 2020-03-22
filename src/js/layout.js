@@ -25,20 +25,21 @@ export class Layout extends React.Component {
 			<div className="d-flex flex-column h-100">
 				<BrowserRouter basename={basename}>
 					<ScrollToTop>
-						<Switch>
+						{/* <Switch>
 							<Route exact path="/" component={Navbar} />
 							<Route exact path="/about" component={NavbarWhite} />
-							{/* ^ Not currently in use because I have everything on the Home page */}
+							^ Not currently in use because I have everything on the Home page
 							<Route exact path="/contact" component={NavbarWhite} />
-							{/* ^ Not currently in use because I have everything on the Home page */}
-						</Switch>
+							^ Not currently in use because I have everything on the Home page
+						</Switch> */}
+						<Navbar />
 						<Switch>
 							<Route exact path="/" component={Home} />
-							<Route path="/demo" component={Demo} />
-							<Route path="/single/:theid" component={Single} />
+							{/* <Route path="/projects" component={Projects} /> */}
 							<Route path="/about" component={About} />
 							<Route path="/contact" component={Contact} />
 							<Route render={() => <h1>Not found!</h1>} />
+							{/* <Route path="/single/:theid" component={Single} /> */}
 						</Switch>
 						<NewFooter />
 					</ScrollToTop>
